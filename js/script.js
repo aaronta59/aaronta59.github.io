@@ -13,20 +13,6 @@ $(function(){
 	}
 
 	/*=========================================================================
-		Random quip generator
-	=========================================================================*/
-	var quips =['A guy who probably spends too much time watching bad sitcoms on Netflix',
-							'A guy who cares too much about network reality television',
-							'A guy who drinks too much caffeine for his own good',
-							'A guy who had to look up how to create this random quip generator on StackExchange',
-							'A guy who once got lost in a large bathroom']
-
-	function randomQuip() {
-		var randomNum = Math.floor(Math.random() * 5);
-		document.getElementId('randomQuip').innerHTML = quips[randomNum];
-	}
-
-	/*=========================================================================
 		Magnific Popup (Project Popup initialization)
 	=========================================================================*/
 	$('.view-project').magnificPopup({
@@ -189,3 +175,18 @@ $(function(){
 		}
 	});
 });
+
+
+/*=========================================================================
+	Random quip generator
+=========================================================================*/
+var quips =['A guy who probably spends too much time watching bad sitcoms on Netflix',
+						'A guy who cares too much about network reality television',
+						'A guy who drinks too much caffeine for his own good',
+						'A guy who had to look up how to create this random quip generator on StackExchange',
+						'A guy who once got lost in a large bathroom']
+
+function randomQuip() {
+	var randomNum = Math.floor(Math.random() * 5);
+	document.getElementId('randomQuip').innerHTML = quips[randomNum];
+}
